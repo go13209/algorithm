@@ -1,6 +1,3 @@
-import sys
-
-n = int(sys.stdin.readline())
-number_list = list(map(int, sys.stdin.readline().split()))
-sorted_list = sorted(number_list)
-print(sorted_list[0], sorted_list[n-1])
+T = int(input())
+numbers = sorted(list(map(int, input().split())))
+print(f'{numbers[0]} {numbers[T - 1]}')
