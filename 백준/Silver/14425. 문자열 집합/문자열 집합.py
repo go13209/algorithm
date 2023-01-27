@@ -1,11 +1,12 @@
 a, b = map(int, input().split())
-word = []
+A = set()
 cnt = 0
 
 for _ in range(a):
-    word.append(input())
+    A.add(input())
 for _ in range(b):
-    str = input()
-    if str in word:
+    word = input()
+    if word in A:
         cnt += 1
+
 print(cnt)
