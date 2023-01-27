@@ -1,9 +1,6 @@
-list = []
-cnt = 0
-for n in range(1, 11):
+remainder = set()
+
+for _ in range(10):
     number = int(input())
-    remainder = number % 42
-    if remainder not in list:
-        list.append(remainder)
-        cnt += 1
-print(cnt)
+    remainder.add(number%42)
+print(len(remainder))
