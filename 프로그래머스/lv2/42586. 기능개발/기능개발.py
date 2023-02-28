@@ -16,7 +16,6 @@ def solution(progresses, speeds):
                 answer.append(len(days))
                 days.clear()
                 days.append(take_time)
-    else:
-        answer.append(len(days))
+    answer.append(len(days))
                 
     return answer
