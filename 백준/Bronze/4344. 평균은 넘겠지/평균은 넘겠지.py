@@ -1,10 +1,9 @@
-T = int(input())
-for t in range(T):
-    number_line = list(map(int, input().split()))
-    students = number_line[0]
-    scores = number_line[1:]
+n = int(input())
+for _ in range(n):
+    case = list(map(int, input().split()))
     cnt = 0
-    for score in scores:
-        if score > (sum(scores) / students):
+    average = sum(case[1:]) / case[0]
+    for score in case[1:]:
+        if score > average:
             cnt += 1
-    print('{:0.3f}'.format(round(cnt/students*100, 3)) + '%')
+    print(format(cnt/case[0]*100, '.3f')+'%')   
